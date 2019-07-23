@@ -9,7 +9,7 @@
   <nav class="navbar">
       <ul class+"main -nav" id="js-menu">
         <li>
-          <a id= "home" href="proj 1.html" class="nav-links">Home</a>
+          <a id= "home" href="index.html" class="nav-links">Home</a>
           <li>
             <a id="About me" href="proj 2.html" "nav-links">About me</a>
           </li>
@@ -25,7 +25,7 @@
       </ul>
   </nav>
   <p class="contact">For any further queries please complete the contact form below:</p>
-  <form align="center" action="Mailto:isrealscott679@gmail.com" method="post">
+  <form align="center" action="javascript:alert('WIP')" method="post">
     <fieldset><label for="name">Name</label>
     <input type="name" name="name"><br/></fieldset>
     <fieldset><lable for "Email">Email</lable>
@@ -33,8 +33,13 @@
     <fieldset><lable for="Query">Query</lable>
     <textarea name= "Query"></textarea><br/></fieldset>
     <fieldset><lable for="Submit"></lable>
-    <input type="Submit" name="Submit"><br/></fieldset>
+    <input id= "Submit" type="Submit" name="Submit"><br/></fieldset>
   </form>
+
+  <script>
+  let submit = document.getElementById("Submit");
+    submit.onClick(function(e){ alert("WIP")})
+  </script>
 </body>
 </head>
 </html>

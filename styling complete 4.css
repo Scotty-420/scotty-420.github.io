@@ -40,3 +40,5 @@ p.about{
   color: white;
   text-shadow: 4px 4px 4px yellow;
 }
+@media screen and (max-width: 760px){
+}

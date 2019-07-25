@@ -24,21 +24,27 @@
           </li>
       </ul>
   </nav>
-  <p class="contact"  style="font-size:2vw;">For any further queries please complete the contact form below:</p>
-  <form align="center" action="javascript:alert('WIP')" method="post"  style="font-size:2vw;">
-    <fieldset><label for="name">Name</label>
-    <input type="name" name="name"><br/></fieldset>
-    <fieldset><lable for "Email">Email</lable>
-    <input type="Email" name="Email"><br/></fieldset>
-    <fieldset><lable for="Query">Query</lable>
-    <textarea name= "Query"></textarea><br/></fieldset>
-    <fieldset><lable for="Submit"></lable>
-    <input id= "Submit" type="Submit" name="Submit"><br/></fieldset>
-  </form>
-
-  <script>
-  let submit = document.getElementById("Submit");
-    submit.onClick(function(e){ alert("WIP--Work In Progress!!!")})
+  <h1 class="contact"  style="font-size:2vw;"><ins>For any further queries please complete the contact form below:</ins></h1>
+    <p><ins>Personal details</ins></p></br>
+      <input class="details" type="Name" placeholder="Full name" required/></br></br>
+      <span class="tick"></span>
+      <input class="details"type="Surname" placeholder="Last name" required/></br></br>
+      <span class="tick"></span>
+    </br>
+    <fieldset  style="font-size:2vw;">
+    <legend><ins>Contact details</ins></legend>
+    <input type="Email" placeholder="Email" required/></br>
+    <span class="tick"></span>
+    <input type="Telephone" placeholder="phone number" required/></br>
+    <span class="tick"></span>
+    <p><ins>How would you like to be contacted?</ins></p>
+    </br>
+    <select>
+      <option>By email</option>
+      <option>By telephone</option>
+    </select>
+    <input type="submit" value="submit"
+  </fieldset>
   </script>
 </body>
 </head>

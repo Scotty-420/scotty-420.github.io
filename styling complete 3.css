@@ -1,22 +1,23 @@
 p{
-  font-size: 25px;
+  font-size: 20px;
   text-align: left;
   color: white;
-  text-shadow: 4px 4px 4px yellow;
+  text-shadow: 4px 4px 4px black;
 }
 h1{
   text-align: center;
-  font-size: 50px;
+  font-size: 28px;
   font-family: sans-serif;
   color: white;
-  text-shadow: 4px 4px 4px yellow;
+  text-shadow: 4px 4px 4px black;
 }
 body {
-  background-image: url("skillset.jpg");
+  background-image: linear-gradient(black, purple);
   background-size: cover;
   height: 100%;
   width:100%;
   background-repeat: no-repeat;
+  background-color: purple;
 }
 .navbar{
   font-size: 30px;
@@ -29,7 +30,7 @@ li{
 }
 ul{
   text-align:center;
-  display: inline;
+
 }
 a{
   text-decoration: none;
@@ -46,25 +47,27 @@ div.about{
   text-shadow: 4px 4px 4px black;
 }
 ul.skill{
-    text-align: center;
+    text-align: left;
     display: block;
 }
 li.skill{
     text-align: center;
-
   }
 
   label {
     font-family: sans-serif;
     color:White;
-    text-shadow: 4px 4px 4px yellow;
+    text-shadow: 4px 4px 4px black;
     font-size: 20px;
   }
 h2{
     font-size: 30px;
-    text-shadow: 4px 4px 4px yellow;
+    text-shadow: 4px 4px 4px black;
     color: white;
     text-align: center;
 }
 @media screen and (max-width: 760px){
+}
+p.skills{
+    font-size: 20px;
 }

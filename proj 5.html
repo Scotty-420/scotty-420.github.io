@@ -25,27 +25,30 @@
       </ul>
   </nav>
   <h1 class="contact"  style="font-size:2vw;"><ins>For any further queries please complete the contact form below:</ins></h1>
-    <p><ins>Personal details</ins></p></br>
-      <input class="details" type="Name" placeholder="Full name" required/></br></br>
-      <span class="tick"></span>
-      <input class="details"type="Surname" placeholder="Last name" required/></br></br>
-      <span class="tick"></span>
-    </br>
-    <fieldset  style="font-size:2vw;">
-    <legend><ins>Contact details</ins></legend>
-    <input type="Email" placeholder="Email" required/></br>
-    <span class="tick"></span>
-    <input type="Telephone" placeholder="phone number" required/></br>
-    <span class="tick"></span>
-    <p><ins>How would you like to be contacted?</ins></p>
-    </br>
-    <select>
-      <option>By email</option>
-      <option>By telephone</option>
-    </select>
-    <input type="submit" value="submit"
-  </fieldset>
-  </script>
+</br></br></br></br>
+
+    <form id="contactForm">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name"><br/>
+    <label for "email">Email</lablel>
+    <input type="email" name="email" id="email"><br/>
+    <label for="message">Message</label>
+    <textarea name="message" id="message"></textarea><br/>
+    <input type="submit" name="submit" onclick="sub"><br/>
+    </form>
+
+    <!--
+    <fieldset>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name"><br/></fieldset>
+    <fieldset><lable for "email">Email</lable>
+    <input type="email" name="email" id="email"><br/></fieldset>
+    <fieldset><lable for="message">Message</lable>
+    <textarea name= "message" rows="3"></textarea><br/></fieldset>
+    <input type="submit" name="submit"><br/></fieldset>-->
+
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
+  <script src="main.js"></script>
 </body>
-</head>
 </html>

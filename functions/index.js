@@ -28,8 +28,6 @@ function sendmail(name, email, message,phone){
     <p>${message}</p>
     <h3>Phone</h3>
     <p>${phone}</p>`
-
-    console.log(123)
   };
 
     transporter.sendMail(mailOptions, function(error, info) {

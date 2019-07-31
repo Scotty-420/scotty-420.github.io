@@ -19,7 +19,13 @@ function sendmail(name, email, message){
     from: gmailEmail,
     to: gmailEmail,
     subject:'New form submitted',
-  //  html:<h1>New form Submitted:{{newMessageRef}}</h1>
+    html:`<h1>New Contact Request</h1>
+    <h3>Name</h3>
+    <p>${name}</p>
+    <h3>Email</h3>
+    <p>${email}</p>
+    <h3>Message</h3>
+    <p>${message}</p>`
 
   };
 

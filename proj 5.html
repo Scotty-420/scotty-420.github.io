@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta charset="utf-8">
       <link rel="stylesheet" href="styling complete 5.css">
    <title>Contact me</title>
@@ -27,16 +29,17 @@
   <h1 class="contact"  style="font-size:2vw;"><ins>For any further queries please complete the contact form below:</ins></h1>
 </br></br></br></br>
 
-    <form id="contactForm">
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name"><br/>
-    <label for "email">Email</lablel>
-    <input type="email" name="email" id="email"><br/>
-    <label for="phone">phone</label>
-    <input type="tel" name="phone" id="phone"><br/>
-    <label for="message">Message</label>
-    <textarea name="message" id="message"></textarea><br/>
-    <input type="submit" name="submit" onclick="sub"><br/>
+    <form class="contactForm">
+    <label for="name">Name</label><br/><br/>
+    <input type="text" name="name" id="name" placeholder="Full Name"><br/><br/><br/>
+    <label for "email">Email</lablel><br/><br/>
+    <input type="email" name="email" id="email" placeholder="Email address"><br/><br/><br/>
+    <label for="phone">phone</label><br/><br/>
+    <input type="tel" name="phone" id="phone" placeholder="Cellphone"><br/><br/><br/>
+    <label for="message">Message</label><br/><br/>
+    <textarea name="message" id="message" placeholder="Your Message"></textarea><br/><br/><br/>
+    <div class="g-recaptcha" data-sitekey="6LcQrLAUAAAAAJjcHHkw5gAwLErqtWK2oDzuEUqi"></div>
+    <input type="submit" name="submit"><br/><br/><br/>
     </form>
 
     <!--

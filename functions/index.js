@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-function sendmail(name, email, message){
+function sendmail(name, email, message,phone){
 
   var mailOptions={
     from: gmailEmail,
@@ -25,8 +25,11 @@ function sendmail(name, email, message){
     <h3>Email</h3>
     <p>${email}</p>
     <h3>Message</h3>
-    <p>${message}</p>`
+    <p>${message}</p>
+    <h3>Phone</h3>
+    <p>${phone}</p>`
 
+    console.log(123)
   };
 
     transporter.sendMail(mailOptions, function(error, info) {
@@ -44,6 +47,7 @@ exports.sendEmails = functions.database.ref('/messages/{name}').onCreate((snapsh
   const name = val.name;
   const email= val.email;
   const message= val.message;
-  sendmail(name, email, message);
+  const phone = val.phone;
+  sendmail(name, email, message,phone);
   return null;
 });

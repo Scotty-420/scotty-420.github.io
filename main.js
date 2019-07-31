@@ -25,8 +25,8 @@ function submitForm(e){
   var name = getInputVal('name');
   var email = getInputVal('email');
   var message = getInputVal('message');
-
-  saveMessage(name, email, message);
+  var phone = getInputVal('phone');
+  saveMessage(name, email, message,phone);
 }
 
 //function to get form values
@@ -35,11 +35,12 @@ function getInputVal(id){
 }
 
   //save te message to firebase
-  function saveMessage(name, email, message){
+  function saveMessage(name, email, message,phone){
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
       name: name,
       email: email,
       message: message,
+      phone: phone
     });
   }

@@ -19,6 +19,7 @@ body {
   height:100%;
   background-repeat: no-repeat;
   background-color: purple;
+  border-width: medium;
 
 }
 .navbar{
@@ -80,6 +81,14 @@ input[type="submit"]{
   letter-spacing:  0.1em;
   border-radius: 2px;
   border: 0;
-  box-shadow: 1px 3px 5px rgba(0.0.0.0.5);
+  box-shadow: 1px 3px 5px black;
   width: 60px;
+}
+.contactForm{
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-style: solid;
+
+
 }

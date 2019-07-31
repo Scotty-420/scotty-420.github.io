@@ -26,7 +26,7 @@ function submitForm(e){
   var email = getInputVal('email');
   var message = getInputVal('message');
   var phone = getInputVal('phone');
-  saveMessage(name, email, message,phone);
+  saveMessage(name ,email ,message ,phone );
 }
 
 //function to get form values

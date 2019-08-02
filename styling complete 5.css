@@ -39,7 +39,6 @@ a{
   color: white;
   text-align:center;
   border-style: solid;
-  border-radius: 5px;
 
 }
 @media screen and (max-width: 760px){
@@ -89,6 +88,5 @@ input[type="submit"]{
     text-align: center;
     color: white;
     border-style: solid;
-
 
 }
